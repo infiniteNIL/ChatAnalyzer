@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DC73EE0E1AC70D5600A980E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE0D1AC70D5600A980E1 /* main.m */; };
+		DC73EE1D1AC70D9000A980E1 /* ChatAnalyzerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE1C1AC70D9000A980E1 /* ChatAnalyzerTests.m */; };
+		DC73EE231AC70DE600A980E1 /* ChatAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE221AC70DE600A980E1 /* ChatAnalyzer.m */; };
+		DC73EE241AC70DE600A980E1 /* ChatAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE221AC70DE600A980E1 /* ChatAnalyzer.m */; };
+		DC73EE471AC7188900A980E1 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE461AC7188900A980E1 /* JSON.m */; };
+		DC73EE481AC7188900A980E1 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73EE461AC7188900A980E1 /* JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,24 @@
 /* Begin PBXFileReference section */
 		DC73EE0A1AC70D5600A980E1 /* ChatAnalyzer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChatAnalyzer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC73EE0D1AC70D5600A980E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC73EE181AC70D9000A980E1 /* ChatAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC73EE1B1AC70D9000A980E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC73EE1C1AC70D9000A980E1 /* ChatAnalyzerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatAnalyzerTests.m; sourceTree = "<group>"; };
+		DC73EE211AC70DE600A980E1 /* ChatAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatAnalyzer.h; sourceTree = "<group>"; };
+		DC73EE221AC70DE600A980E1 /* ChatAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatAnalyzer.m; sourceTree = "<group>"; };
+		DC73EE451AC7188900A980E1 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DC73EE461AC7188900A980E1 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC73EE071AC70D5600A980E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC73EE151AC70D9000A980E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DC73EE0C1AC70D5600A980E1 /* ChatAnalyzer */,
+				DC73EE191AC70D9000A980E1 /* ChatAnalyzerTests */,
 				DC73EE0B1AC70D5600A980E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DC73EE0A1AC70D5600A980E1 /* ChatAnalyzer */,
+				DC73EE181AC70D9000A980E1 /* ChatAnalyzerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +79,37 @@
 			isa = PBXGroup;
 			children = (
 				DC73EE0D1AC70D5600A980E1 /* main.m */,
+				DC73EE211AC70DE600A980E1 /* ChatAnalyzer.h */,
+				DC73EE221AC70DE600A980E1 /* ChatAnalyzer.m */,
+				DC73EE251AC7129800A980E1 /* Categories */,
 			);
 			path = ChatAnalyzer;
+			sourceTree = "<group>";
+		};
+		DC73EE191AC70D9000A980E1 /* ChatAnalyzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC73EE1C1AC70D9000A980E1 /* ChatAnalyzerTests.m */,
+				DC73EE1A1AC70D9000A980E1 /* Supporting Files */,
+			);
+			path = ChatAnalyzerTests;
+			sourceTree = "<group>";
+		};
+		DC73EE1A1AC70D9000A980E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC73EE1B1AC70D9000A980E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC73EE251AC7129800A980E1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DC73EE451AC7188900A980E1 /* JSON.h */,
+				DC73EE461AC7188900A980E1 /* JSON.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +132,23 @@
 			productReference = DC73EE0A1AC70D5600A980E1 /* ChatAnalyzer */;
 			productType = "com.apple.product-type.tool";
 		};
+		DC73EE171AC70D9000A980E1 /* ChatAnalyzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC73EE1E1AC70D9000A980E1 /* Build configuration list for PBXNativeTarget "ChatAnalyzerTests" */;
+			buildPhases = (
+				DC73EE141AC70D9000A980E1 /* Sources */,
+				DC73EE151AC70D9000A980E1 /* Frameworks */,
+				DC73EE161AC70D9000A980E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatAnalyzerTests;
+			productName = ChatAnalyzerTests;
+			productReference = DC73EE181AC70D9000A980E1 /* ChatAnalyzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +159,9 @@
 				ORGANIZATIONNAME = "Rod Schmidt";
 				TargetAttributes = {
 					DC73EE091AC70D5600A980E1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DC73EE171AC70D9000A980E1 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -109,9 +179,20 @@
 			projectRoot = "";
 			targets = (
 				DC73EE091AC70D5600A980E1 /* ChatAnalyzer */,
+				DC73EE171AC70D9000A980E1 /* ChatAnalyzerTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC73EE161AC70D9000A980E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC73EE061AC70D5600A980E1 /* Sources */ = {
@@ -119,6 +200,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC73EE0E1AC70D5600A980E1 /* main.m in Sources */,
+				DC73EE471AC7188900A980E1 /* JSON.m in Sources */,
+				DC73EE231AC70DE600A980E1 /* ChatAnalyzer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC73EE141AC70D9000A980E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC73EE1D1AC70D9000A980E1 /* ChatAnalyzerTests.m in Sources */,
+				DC73EE481AC7188900A980E1 /* JSON.m in Sources */,
+				DC73EE241AC70DE600A980E1 /* ChatAnalyzer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +306,38 @@
 			};
 			name = Release;
 		};
+		DC73EE1F1AC70D9000A980E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChatAnalyzerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC73EE201AC70D9000A980E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChatAnalyzerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +355,14 @@
 			buildConfigurations = (
 				DC73EE121AC70D5600A980E1 /* Debug */,
 				DC73EE131AC70D5600A980E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC73EE1E1AC70D9000A980E1 /* Build configuration list for PBXNativeTarget "ChatAnalyzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC73EE1F1AC70D9000A980E1 /* Debug */,
+				DC73EE201AC70D9000A980E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

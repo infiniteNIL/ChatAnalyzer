@@ -6,12 +6,22 @@
 //  Copyright (c) 2015 Rod Schmidt. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+#import "ChatAnalyzer.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-	    // insert code here...
-	    NSLog(@"Hello, World!");
+		printf("ChatAnalyzer v1.0\n");
+		if (argc != 2) {
+			printf("Usage: ChatAnalyzer <chatMessage>\n");
+		}
+		else {
+			printf("message: %s\n", argv[1]);
+			ChatAnalyzer *analyzer = [ChatAnalyzer new];
+			NSString *json = [analyzer analyzeMessage:[NSString stringWithUTF8String:argv[1]]];
+			printf("\n%s\n", [json UTF8String]);
+		}
 	}
+
     return 0;
 }
